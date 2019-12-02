@@ -25,6 +25,26 @@ class ViewController: UIViewController {
     }
     
     @available(iOS 13.0, *)
+    func signOut() {
+        
+    }
+    
+    @available(iOS 13.0, *)
+    func refresh() {
+        
+    }
+    
+//    @available(iOS 13.0, *)
+//    func check() -> Int {
+//        var result: ASAuthorizationAppleIDProvider.CredentialState = .notFound
+//        let appleIDProvider = ASAuthorizationAppleIDProvider()
+////        appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
+////            result = credentialState
+////        }
+//        return result.rawValue
+//    }
+    
+    @available(iOS 13.0, *)
     func authorizationRequest(requests: [ASAuthorizationRequest]) {
         let controller = ASAuthorizationController(authorizationRequests: requests)
         controller.delegate = self
